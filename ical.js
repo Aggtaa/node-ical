@@ -350,24 +350,24 @@ module.exports = {
       // Original end function
       const originalEnd = function (component, parameters_, curr, stack) {
         // Prevents the need to search the root of the tree for the VCALENDAR object
-        if (component === 'VCALENDAR') {
-          // Scan all high level object in curr and drop all strings
-          let key;
-          let object;
+        // if (component === 'VCALENDAR') {
+        //   // Scan all high level object in curr and drop all strings
+        //   let key;
+        //   let object;
 
-          for (key in curr) {
-            if (!{}.hasOwnProperty.call(curr, key)) {
-              continue;
-            }
+        //   for (key in curr) {
+        //     if (!{}.hasOwnProperty.call(curr, key)) {
+        //       continue;
+        //     }
 
-            object = curr[key];
-            if (typeof object === 'string') {
-              delete curr[key];
-            }
-          }
+        //     object = curr[key];
+        //     if (typeof object === 'string') {
+        //       delete curr[key];
+        //     }
+        //   }
 
-          return curr;
-        }
+        //   return curr;
+        // }
 
         const par = stack.pop();
 

@@ -1,6 +1,6 @@
 {
-  "name": "node-ical",
-  "version": "0.13.0",
+  "name": "node-ical-extended",
+  "version": "0.13.1",
   "main": "node-ical.js",
   "types": "node-ical.d.ts",
   "description": "NodeJS class for parsing iCalendar/ICS files",
@@ -11,7 +11,7 @@
     "nodejs"
   ],
   "homepage": "https://github.com/jens-maus/node-ical",
-  "author": "Jens Maus <mail@jens-maus.de>",
+  "author": "Jens Maus <mail@jens-maus.de>, Anton Zykov <azykov@mail.ru>",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
